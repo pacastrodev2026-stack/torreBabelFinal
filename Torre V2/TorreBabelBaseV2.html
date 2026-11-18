@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+			<title> Torre de Babel V2 </title>
+			
+			<!-- Style do html -->
+			<link rel="stylesheet" href="CSS/styleV2.css">
+	</head>
+	
+	<body>
+	
+		<!-- MENU INCIAL -->
+		<div class="menu-inicial">
+		
+		<!-- Arte da torre de babel -->
+		<img src="IMG/torre.png" alt="Torre de babel">
+		
+		<!-- Botão pra iniciar o jogo -->
+		<button id="botao-iniciar"> INICIAR </button>
+		
+		</div>
+		
+		<!-- Área de combate -->
+		<div class="area-combate">
+		
+		<!-- Campo de combate -->
+		<div class="campo-combate">
+			
+		<canvas id="meu_canvas2" width="1200" height="670"> </canvas>
+		
+		</div>
+		
+		<!-- Painel lateral -->
+		<div class="painel-lateral">
+		
+		<!-- Tela do jogador -->
+		<div class="tela-jogador">
+		
+		<!-- Caixa de texto -->
+		<div class="caixa-texto">
+			O que você irá escolher?
+		</div>
+		
+		<!-- Opções de ação -->
+		<div class="opcoes-acao">
+
+		<button class="opcao-acao">
+			<span class="cursor-opcao"> </span>
+			<span class="texto-opcao">ATACAR</span>
+		</button>
+
+		<button class="opcao-acao">
+			<span class="cursor-opcao"> </span>
+			<span class="texto-opcao">ITENS</span>
+		</button>
+
+		<button class="opcao-acao">
+			<span class="cursor-opcao"> </span>
+			<span class="texto-opcao">AGIR</span>
+		</button>
+
+		<button class="opcao-acao">
+			<span class="cursor-opcao"> </span>
+			<span class="texto-opcao">STATUS</span>
+		</button>
+
+		</div>
+		
+		</div> <!-- fecha tela jogador -->
+			
+		<!-- Vida do protagonista --> 
+		<div class="vida-protagonista">
+			<span> HP </span>
+			<strong id="valor-hp"> 10 </strong>
+		</div>
+		
+		<!-- IMAGEM DA SENTINELA -->
+		<div class="imagem-sentinela">
+			<img src="IMG/SSSentinela.png" alt="Sentinela">
+			<span class="indicador-dano"></span>
+		</div>
+		
+		</div> <!-- fecha painel lateral -->
+		</div> <!-- fecha area combate -->
+
+			<!-- Arquivos JavaScript -->
+			
+			<script src="JS/teclado.js"> </script>
+			<script src="JS/hitbox.js"> </script>
+			<script src="JS/turnos.js"> </script>
+			<script src="JS/protagonista.js"> </script>
+			<script src="JS/OPP/inimigo.js"> </script>
+			<script src="JS/OPP/sentinela.js"> </script>
+			<script src="JS/principal.js"> </script>
+	</body>
+</html>
